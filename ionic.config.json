@@ -1,0 +1,7 @@
+{
+  "name": "foodpanda_clone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
