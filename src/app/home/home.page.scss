@@ -1,6 +1,7 @@
 .menu-icon, .fav-icon, .cart-icon{
   color: #C60D5C;
 }
+
 .location{
   font-size: 14px;
   font-weight: bold;
@@ -10,3 +11,9 @@
   font-size:12px;
   margin: 0px;
 }
+.searchbar-input.sc-ion-searchbar-md{
+  border-radius: 5px;
+  border: none;
+  background-color:#979090;
+}
+
