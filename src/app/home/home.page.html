@@ -1,4 +1,4 @@
-<ion-header [translucent]="true" >
+<ion-header [translucent]="true">
   <ion-toolbar class="toolbar">
     <ion-buttons slot="start">
       <ion-button>
@@ -6,10 +6,10 @@
       </ion-button>
     </ion-buttons>
 
-      <div class="location-class">
-        <p class="location">DHA Phase 1</p>
-        <p class="city">Lahore</p>
-      </div>
+    <div class="location-class">
+      <p class="location">DHA Phase 1</p>
+      <p class="city">Lahore</p>
+    </div>
 
     <ion-buttons slot="end">
       <ion-button>
@@ -17,14 +17,89 @@
         <ion-icon name="bag-outline" class="cart-icon"></ion-icon>
       </ion-button>
     </ion-buttons>
-      
-    
+
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
   <ion-searchbar placeholder="Search for shops & restaurants" class="search-class"></ion-searchbar>
-   
-  
+
+  <div class="welcome-card">
+    <ion-thumbnail slot="end">
+      <ion-img src="assets/sandwitch.png" class="sandwitch-img"></ion-img>
+    </ion-thumbnail>
+    <h3 class="welcome-heading">Good afternoon, Mohammad</h3>
+    <p class="welcome-para">Thinking of Lunch?There are 343 restaurants in your area.</p>
+  </div>
+
+
+  <div class="cards-grid">
+
+
+    <ion-card class="first-card">
+      <ion-card-header>
+        <ion-card-title>
+          Food Delivery
+        </ion-card-title>
+        <ion-card-subtitle>
+          Order from your favourite restaurants and home chefs
+        </ion-card-subtitle>
+      </ion-card-header>
+
+    </ion-card>
+
+    <ion-card class="second-card">
+      <ion-card-header>
+        <ion-card-title>
+          pandamart
+        </ion-card-title>
+        <ion-card-subtitle>
+          Groceries in 20 minutes
+        </ion-card-subtitle>
+      </ion-card-header>
+
+    </ion-card>
+
+    <ion-card class="third-card">
+      <ion-card-header>
+        <ion-card-title>
+          Pick-Up
+        </ion-card-title>
+        <ion-card-subtitle>
+          Enjoy flat 25% off and more..
+        </ion-card-subtitle>
+      </ion-card-header>
+
+    </ion-card>
+
+    <ion-card class="fourth-card">
+      <ion-card-header>
+        <ion-card-title>
+          Shops
+        </ion-card-title>
+        <ion-card-subtitle>
+          Grocery & more..
+        </ion-card-subtitle>
+      </ion-card-header>
+
+    </ion-card>
+
+  </div>
+  <h3 class="welcome-heading">Your Restaurants</h3>
+
+  <div class="your-restaurants">
+    <ion-card class="restaurant-first-card">
+      <ion-card-header>
+        <ion-card-title>
+          Shops
+        </ion-card-title>
+        <ion-card-subtitle>
+          Grocery & more..
+        </ion-card-subtitle>
+      </ion-card-header>
+
+    </ion-card>
+  </div>
 </ion-content>

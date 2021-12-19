@@ -16,4 +16,57 @@
   border: none;
   background-color:#979090;
 }
+.welcome-heading{
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px;
+  margin: 0px;
+  width: 60%;
+  font-weight: bolder;
+}
+.welcome-para{
+  display: inline-block;
+  font-size: 12px;
+  margin: 0px;
+  padding: 9px;
+  width: 60%;
+}
+.sandwitch-img{
+  display: inline-block;
+  border: none;
+}
 
+
+.cards-grid, .your-restaurants{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.first-card{
+  background-color: #C60D5C;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+ion-card-title{
+  color: white;
+}
+ion-card-subtitle{
+  color:white
+}
+.second-card{
+  background-color: #7E5920;
+}
+.third-card{
+  background-color:#9D5C63
+}
+.fourth-card{
+  background-color: #028090;
+}
+
+.your-restaurants{
+  background-color: white;
+}
+
+
+.restaurant-first-card{
+  color:  black;
+}
