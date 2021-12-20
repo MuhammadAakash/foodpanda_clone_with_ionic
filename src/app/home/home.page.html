@@ -14,6 +14,9 @@
     <ion-buttons slot="end">
       <ion-button>
         <ion-icon name="heart-outline" class="fav-icon"></ion-icon>
+        
+      </ion-button>
+      <ion-button>
         <ion-icon name="bag-outline" class="cart-icon"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -26,23 +29,26 @@
 
   <ion-searchbar placeholder="Search for shops & restaurants" class="search-class"></ion-searchbar>
 
-  <div class="welcome-card">
+  <ion-item class="welcome-card" lines="none">
     <ion-thumbnail slot="end">
-      <ion-img src="assets/sandwitch.png" class="sandwitch-img"></ion-img>
-    </ion-thumbnail>
+      <img src="assets/image.png" class="img">
+  </ion-thumbnail>
+    <ion-label>
     <h3 class="welcome-heading">Good afternoon, Mohammad</h3>
     <p class="welcome-para">Thinking of Lunch?There are 343 restaurants in your area.</p>
-  </div>
+  </ion-label>
+  </ion-item>
 
 
   <div class="cards-grid">
 
-
     <ion-card class="first-card">
+      <img src="assets/first-card-img.png" class="first-card-img">
       <ion-card-header>
         <ion-card-title>
           Food Delivery
         </ion-card-title>
+        
         <ion-card-subtitle>
           Order from your favourite restaurants and home chefs
         </ion-card-subtitle>
@@ -51,6 +57,8 @@
     </ion-card>
 
     <ion-card class="second-card">
+      <img src="assets/pandamart-img.png" class="pandamart-img" >
+      
       <ion-card-header>
         <ion-card-title>
           pandamart
@@ -63,6 +71,10 @@
     </ion-card>
 
     <ion-card class="third-card">
+
+    <ion-card class="third-first-card">
+      <img src="assets/take-away.png" class="takeaway-img" >
+
       <ion-card-header>
         <ion-card-title>
           Pick-Up
@@ -74,8 +86,9 @@
 
     </ion-card>
 
-    <ion-card class="fourth-card">
-      <ion-card-header>
+    <ion-card class="third-second-card">
+      <img src="assets/grocery.png" class="grocery-img" >
+      <ion-card-header style="padding: 0px; padding-left: 10px;">
         <ion-card-title>
           Shops
         </ion-card-title>
@@ -85,21 +98,36 @@
       </ion-card-header>
 
     </ion-card>
-
-  </div>
-  <h3 class="welcome-heading">Your Restaurants</h3>
+  </ion-card>
+  </div >
+  <h3 class="restaurant-heading">Your Restaurants</h3>
 
   <div class="your-restaurants">
-    <ion-card class="restaurant-first-card">
-      <ion-card-header>
-        <ion-card-title>
-          Shops
-        </ion-card-title>
-        <ion-card-subtitle>
-          Grocery & more..
-        </ion-card-subtitle>
-      </ion-card-header>
+    <ion-card class="restaurant-first-card" (click)= "businessDetails()">
+      <ion-badge class="deal-badge">Celebration Deals</ion-badge>
+      <img src="assets/restaurant-first-card.png" style="background-color: #f2f2f2;">
+      <ion-badge  class="time-badge">35 mints</ion-badge>
+      <h3 class="restaurant-card-heading">Pizza Max - Islampura</h3>
+      <p class="restaurant-card-para">Italians, Beverages, European, Desser...</p>
+      <p class="restaurant-card-delivery">PKR 60.00 delivery fee</p>
+      
 
     </ion-card>
   </div>
+
+  <h3 class="restaurant-heading">Your daily deals</h3>
+  <div class="daily-deals">
+    <ion-slides [options]="slideOpts">
+    <ion-slide class="deals-cards">
+      <img src="assets/deal1.png">
+    </ion-slide>
+    <ion-slide class="deals-cards">
+      <img src="assets/deal2.png">
+    </ion-slide>
+    <ion-slide class="deals-cards">
+      <img src="assets/deal3.png">
+    </ion-slide>
+  </ion-slides>
+  </div>
+
 </ion-content>

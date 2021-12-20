@@ -1,3 +1,6 @@
+ion-content{
+  padding-left: 10px;
+}
 .menu-icon, .fav-icon, .cart-icon{
   color: #C60D5C;
 }
@@ -17,23 +20,20 @@
   background-color:#979090;
 }
 .welcome-heading{
-  display: inline-block;
   font-size: 14px;
-  padding: 10px;
   margin: 0px;
-  width: 60%;
-  font-weight: bolder;
+  font-weight: bold;
 }
 .welcome-para{
-  display: inline-block;
-  font-size: 12px;
+  font-size: 11px;
   margin: 0px;
-  padding: 9px;
-  width: 60%;
+  white-space: initial;
+  line-height: 1.1;
+  padding-top: 4px;
 }
-.sandwitch-img{
-  display: inline-block;
-  border: none;
+
+.img{    
+  height: 39px;
 }
 
 
@@ -45,6 +45,12 @@
   background-color: #C60D5C;
   grid-column-start: 1;
   grid-column-end: 3;
+  box-shadow: none;
+}
+.first-card-img{
+  width: 60px;
+  position: absolute;
+  right: 15px;
 }
 ion-card-title{
   color: white;
@@ -53,20 +59,83 @@ ion-card-subtitle{
   color:white
 }
 .second-card{
-  background-color: #7E5920;
+  background-color: #fbc531;
+  box-shadow: none;
 }
 .third-card{
-  background-color:#9D5C63
+  margin: 0px;
+  box-shadow: none;
 }
-.fourth-card{
-  background-color: #028090;
+.third-first-card{
+  background-color:#fd79a8;
+  height: 164px;
+  box-shadow: none;
 }
-
-.your-restaurants{
-  background-color: white;
+.takeaway-img{
+  width: 60px;
+  padding-left: 10px;
 }
-
+.third-second-card{
+  background-color: #74b9ff;
+  height: 102px;
+  box-shadow: none;
+}
+.grocery-img{
+  width: 60px;
+}
+.restaurant-heading{
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 7px;
+}
 
 .restaurant-first-card{
   color:  black;
+  width: 254px;
+  box-shadow: none;
+}
+.restaurant-card-heading{
+  font-weight: bold;
+  font-size: 14px;
+  margin:0px
+}
+.deal-badge{
+  background-color: #C60D5C;
+  position: absolute;
+  top: 15px;
+}
+.time-badge{
+  position: absolute;
+  left: 4px;
+  font-size: 12px;
+  padding: 2px;
+  bottom: 60px;
+  color: black;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.restaurant-card-para{
+  margin: 0px;
+  font-size: 11px;
+  color: #6c6767;
+  padding-bottom: 2px;
+}
+.restaurant-card-delivery{
+  font-weight: bold;
+  font-size: 11px;
+  margin: 0px;
+}
+
+.daily-deals{
+  padding-left: 5px;
+}
+.deals-cards{
+  margin: 0px;
+  padding: 4px;
+  width: 1200px;
+  box-shadow: none;
+  img{
+    width: 1200px;
+    border-radius: 5px;
+  }
 }
