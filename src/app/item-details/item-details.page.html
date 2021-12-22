@@ -1,0 +1,66 @@
+
+<ion-content>
+  <ion-card class="main-card">
+    <ion-item class="items-class" lines="none">
+      <ion-button shape="round" size="small" class="back-btn">
+        <ion-icon name="arrow-back-outline" class="back-icon"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <img src="assets/restaurantDetails/restaurant-first-card.png" style="background-color: whitesmoke;">
+    <ion-item>
+      <ion-label>
+        <h3 class="item-heading">Dream Date</h3>
+        <span class="item-price">from Rs. 340.00</span>
+        <p class="item-detail">Date, banana, fresh cream, vanila ice cream & milk</p>
+      </ion-label>
+    </ion-item>
+    
+  </ion-card>
+
+  <ion-card>
+    <ion-item lines ="none">
+      <ion-label>
+      <h3 class="variation-heading" style="font-weight: bold;">Variation</h3>
+      <p class="select-one">Select one</p>
+      <ion-chip class="required-badge">
+        <ion-label>1 Required</ion-label>
+      </ion-chip>
+    </ion-label>
+
+
+    
+  </ion-item>
+  <ion-list>
+
+    <ion-radio-group>
+      <ion-item lines="none">
+        <ion-label class="price">Small</ion-label>
+        <span class="price">Rs. 340.00</span>
+        <ion-radio slot="start" value="Small" class="radio"></ion-radio>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label class="price">Regular</ion-label>
+        <span class="price">Rs. 340.00</span>
+        <ion-radio slot="start" value="Regular" class="radio"></ion-radio>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label class="price">Large</ion-label>
+        <span class="price">Rs. 340.00</span>
+        <ion-radio slot="start" value="Large" class="radio"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <p class="not-available-heading" >If this product is not available</p>
+  <ion-item>
+    <ion-label class="remove-order-label">
+      <p class="remove-para">Remove it from my order</p>
+      <ion-icon name="chevron-forward-outline" class="forward-icon"></ion-icon>
+    
+    </ion-label>
+  </ion-item>
+  </ion-card>
+
+</ion-content>

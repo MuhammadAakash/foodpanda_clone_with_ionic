@@ -1,9 +1,23 @@
 ::-webkit-scrollbar{
     display: none;
 }
+
+ion-segment{
+    --background: white;
+}
+ion-content{
+    --background: #f2f2f2;
+}
+ion-card{
+    --background: white;
+}
+ion-grid{
+    background: white;
+}
 ion-card{
     margin: 0px;
     box-shadow: none;
+    margin-bottom: 10px;
 }
 .back-icon, .share-icon, .time-icon{
     color: #C60D5C;
@@ -36,18 +50,27 @@ ion-card{
 .km,.rating{
     font-size:12px;
 }
+.rating{
+    position: absolute;
+    top: 34px;
+    padding-left: 4px;
+}
 .delivery-item{
     margin: 0px;
     margin-top: -11px;
 }
 .star-icon{
     color: #C60D5C;
+    width: 10px;
 }
 .more-info-btn{
     --background: transparent;
     color: #C60D5C;
     text-transform: initial;
     width: 19%;
+    position: absolute;
+    right: 15px;
+    top: 26px;
 }
 .change-btn{
     --background:transparent;
@@ -58,6 +81,10 @@ ion-card{
 .delivery-time{
     font-weight: bold;
     font-size: 12px;
+}
+.delivery-time-icon{
+    position: relative;
+    top: 3px;
 }
 .segment-btn-class{
     color: black;
@@ -73,6 +100,9 @@ ion-card{
 }
 .fire-icon{
     color:chocolate;
+    position: relative;
+    left: 0px;
+    top: 1px;
 }
 .grid-col{
     margin: 5px;
@@ -92,6 +122,11 @@ ion-card{
     padding-top: 5px; 
     text-align: center;
 }
+.popular-fire-icon{
+    color:chocolate;
+    width: 12px;
+    margin: 0px;
+}
 .price-badge{
     position: absolute;
     bottom: 19px;
@@ -99,4 +134,30 @@ ion-card{
     color: black;
     background: white;
     border-radius: 20px;
+}
+.hot-selling-para{
+    color: black;
+    white-space: initial;
+    margin: 0px;
+}
+.hot-selling-price{
+    margin-top: 4px;
+    color: black
+}
+.hot-selling-img{
+    width: 27%;
+    margin: 0px;
+}
+.popular-badge{
+    position: absolute;
+    margin: 7px;
+    padding: 2px;
+    bottom: 3px;
+    font-size: 11px;
+    left: 100px;
+    color: black;
+    background: #f5d22982;
+    border-radius: 20px;
+    width: 58px;
+    height: 25px;
 }

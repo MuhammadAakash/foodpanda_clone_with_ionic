@@ -45,7 +45,7 @@
             <ion-icon name="star" class="star-icon"></ion-icon>
             <ion-icon name="star" class="star-icon"></ion-icon>
             <ion-icon name="star" class="star-icon"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline" style="width: 10px;"></ion-icon>
             690 ratings
           </span>
         </p>
@@ -58,7 +58,7 @@
     <ion-item lines="none" class="delivery-item">
       <ion-label>
         <p class="delivery-para">
-          <span>
+          <span class="delivery-time-icon">
             <ion-icon name="time-outline" class="time-icon"></ion-icon>
           </span>
           <span class="delivery-time">
@@ -71,79 +71,161 @@
       </ion-button>
     </ion-item>
   </ion-card>
-  <ion-segment scrollable value="Popular">
+
+  <ion-segment scrollable [value]="segmentvalue" (ionChange)= "segmentValueChange($event)">
     <ion-segment-button value="Popular" class="segment-btn-class">
       Popular
     </ion-segment-button>
-    <ion-segment-button value="Salad" class="segment-btn-class">Salad</ion-segment-button>
-    <ion-segment-button value="Hot Selling item" class="segment-btn-class">Hot selling items</ion-segment-button>
+    <ion-segment-button value="HotSellingitem" class="segment-btn-class">Hot selling items</ion-segment-button>
     <ion-segment-button value="Favourites" class="segment-btn-class">Favourites</ion-segment-button>
-    <ion-segment-button value="Seasonal Delight" class="segment-btn-class">Seasonal Delight</ion-segment-button>
+    <ion-segment-button value="SeasonalDelight" class="segment-btn-class">Seasonal Delight</ion-segment-button>
+    <ion-segment-button value="SimpleOneJuices" class="segment-btn-class">Simple One Juices</ion-segment-button>
   </ion-segment>
 
+  <div *ngIf= "segmentvalue == 'Popular'">
   <ion-item lines="none">
     <ion-label>
-    
+
       <ion-icon name="flame" class="fire-icon"></ion-icon>
-    
+
       <span style="font-weight: bold; padding-left: 2px;">Popular</span>
-      
-    <p style="color: black;">Most Ordered right now.</p>
-  </ion-label>
+
+      <p style="color: black;">Most Ordered right now.</p>
+    </ion-label>
   </ion-item>
 
   <ion-grid>
     <ion-row>
-      <ion-col size="6" >
+      <ion-col size="6" (click) = "itemDetails()">
         <ion-card class="grid-col">
           <img src="assets/restaurantDetails/business-image.png">
-        <div class="para-gradient">
-          <p class="popular-gradient-para">
-            2 big 2 Better deal 1
-          </p>
-        </div>
+          <div class="para-gradient">
+            <p class="popular-gradient-para">
+              2 big 2 Better deal 1
+            </p>
+          </div>
           <ion-badge class="price-badge">Rs. 699.00</ion-badge>
         </ion-card>
       </ion-col>
 
-      <ion-col size="6"  >
+      <ion-col size="6" (click) = "itemDetails()">
         <ion-card class="grid-col">
           <img src="assets/restaurantDetails/business-image.png">
-        <div class="para-gradient">
-          <p class="popular-gradient-para">
-            2 big 2 Better deal 1
-          </p>
-        </div>
+          <div class="para-gradient">
+            <p class="popular-gradient-para">
+              2 big 2 Better deal 1
+            </p>
+          </div>
           <ion-badge class="price-badge">Rs. 799.00</ion-badge>
         </ion-card>
       </ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-col size="6" >
+      <ion-col size="6" (click) = "itemDetails()">
         <ion-card class="grid-col">
           <img src="assets/restaurantDetails/business-image.png">
-        <div class="para-gradient">
-          <p class="popular-gradient-para">
-            2 big 2 Better deal 1
-          </p>
-        </div>
+          <div class="para-gradient">
+            <p class="popular-gradient-para">
+              2 big 2 Better deal 1
+            </p>
+          </div>
           <ion-badge class="price-badge">Rs. 699.00</ion-badge>
         </ion-card>
       </ion-col>
 
-      <ion-col size="6"  >
+      <ion-col size="6" (click) = "itemDetails()">
         <ion-card class="grid-col">
           <img src="assets/restaurantDetails/business-image.png">
-        <div class="para-gradient">
-          <p class="popular-gradient-para">
-            2 big 2 Better deal 1
-          </p>
-        </div>
+          <div class="para-gradient">
+            <p class="popular-gradient-para">
+              2 big 2 Better deal 1
+            </p>
+          </div>
           <ion-badge class="price-badge">Rs. 799.00</ion-badge>
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
+</div>
 
+<div *ngIf= "segmentvalue == 'HotSellingitem'">
+  <ion-card >
+    <h4 style="padding-left: 14px; font-weight: bold; color: black; font-size: 16px; ">Hot Selling Items</h4>
+    <ion-item (click) = "itemDetails()">
+      <ion-label>
+        <p style="font-weight: bold; color: black;">Dream Date</p>
+
+        <p class="hot-selling-para">Date , banana, fresh cream, vanila ice cream & milk</p>
+        <p class="hot-selling-price">from Rs. 340.00</p>
+
+      </ion-label>
+      <img src="assets/restaurantDetails/milk.png" slot="end" class="hot-selling-img">
+      <ion-chip class="popular-badge">
+        <ion-icon name="flame" class="popular-fire-icon"></ion-icon>
+        <ion-label>Popular</ion-label>
+      </ion-chip>
+    </ion-item>
+
+    <ion-item lines="none" (click) = "itemDetails()">
+      <ion-label>
+        <p style="font-weight: bold; color: black;">Dream Date</p>
+
+        <p class="hot-selling-para">Date , banana, fresh cream, vanila ice cream & milk</p>
+        <p class="hot-selling-price">from Rs. 340.00</p>
+
+      </ion-label>
+      <img src="assets/restaurantDetails/milk.png" slot="end" class="hot-selling-img">
+      <ion-chip class="popular-badge">
+        <ion-icon name="flame" class="popular-fire-icon"></ion-icon>
+        <ion-label>Popular</ion-label>
+      </ion-chip>
+    </ion-item>
+  </ion-card>
+
+</div>
+
+  <div *ngIf = "segmentvalue == 'Favourites'">
+  <ion-card >
+    <h4 style="padding-left: 14px; font-weight: bold; color: black; font-size: 16px; ">Favourites</h4>
+    <ion-item (click) = "itemDetails()">
+      <ion-label>
+        <p style="font-weight: bold; color: black;">Dream Date</p>
+
+        <p class="hot-selling-para">Date , banana, fresh cream, vanila ice cream & milk</p>
+        <p class="hot-selling-price">from Rs. 340.00</p>
+
+      </ion-label>
+      <img src="assets/restaurantDetails/milk.png" slot="end" class="hot-selling-img">
+      
+    </ion-item>
+
+    <ion-item (click) = "itemDetails()">
+      <ion-label>
+        <p style="font-weight: bold; color: black;">Dream Date</p>
+
+        <p class="hot-selling-para">Date , banana, fresh cream, vanila ice cream & milk</p>
+        <p class="hot-selling-price">from Rs. 340.00</p>
+
+      </ion-label>
+      <img src="assets/restaurantDetails/milk.png" slot="end" class="hot-selling-img">
+      <ion-chip class="popular-badge">
+        <ion-icon name="flame" class="popular-fire-icon"></ion-icon>
+        <ion-label>Popular</ion-label>
+      </ion-chip>
+    </ion-item>
+
+    <ion-item lines="none" (click) = "itemDetails()">
+      <ion-label>
+        <p style="font-weight: bold; color: black;">Dream Date</p>
+
+        <p class="hot-selling-para">Date , banana, fresh cream, vanila ice cream & milk</p>
+        <p class="hot-selling-price">from Rs. 340.00</p>
+
+      </ion-label>
+      <img src="assets/restaurantDetails/milk.png" slot="end" class="hot-selling-img">
+      
+    </ion-item>
+  </ion-card>
+</div>
 </ion-content>
