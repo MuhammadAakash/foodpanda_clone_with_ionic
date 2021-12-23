@@ -21,4 +21,7 @@ export class BusinessDetailsPage implements OnInit {
   itemDetails(){
     this.router.navigate(['/item-details'])
   }
+  goToHome(){
+    this.router.navigate(['/'])
+  }
 }

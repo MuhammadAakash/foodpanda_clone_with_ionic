@@ -2,7 +2,7 @@
 <ion-content>
   <ion-card class="main-card">
     <ion-item class="items-class" lines="none">
-      <ion-button shape="round" size="small" class="back-btn">
+      <ion-button shape="round" size="small" class="back-btn" (click) = "goTobusinessDetails()">
         <ion-icon name="arrow-back-outline" class="back-icon"></ion-icon>
       </ion-button>
     </ion-item>
@@ -17,7 +17,7 @@
     
   </ion-card>
 
-  <ion-card>
+  <ion-card style="margin-bottom: 10px;">
     <ion-item lines ="none">
       <ion-label>
       <h3 class="variation-heading" style="font-weight: bold;">Variation</h3>
@@ -61,6 +61,27 @@
     
     </ion-label>
   </ion-item>
+
+  <p class="not-available-heading">Special instructions</p>
+  <p class="special-para">please let us know if you are allergic to anything or if we need to avoid anything</p>
+  <ion-item lines="none">
+    <ion-textarea rows="2" placeholder="e.g. no mayo" class="special-textarea"></ion-textarea>
+
+  </ion-item>
   </ion-card>
 
+
 </ion-content>
+<ion-footer class="footer">
+  <div class="plus-minus-container">
+  <ion-fab-button size="small" class="quantity-button">
+    <ion-icon  name="remove-outline" class="quantity-icon"></ion-icon>
+  </ion-fab-button>
+  <p class="quantity"> {{quantity}}</p>
+  <ion-fab-button size="small" class="quantity-button">
+    <ion-icon name="add-outline" class="qunatity-icon"></ion-icon>
+  </ion-fab-button>
+  <ion-button class="cart-button" (click)="cartDetails()">Add to cart</ion-button>
+</div>
+
+</ion-footer>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-item-details',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./item-details.page.scss'],
 })
 export class ItemDetailsPage implements OnInit {
-
-  constructor() { }
-
+  quantity = 1
+  constructor(private router:Router) { }
+  
   ngOnInit() {
   }
 
+  cartDetails(){
+    this.router.navigate(['/cart-details'])
+  }
+  goTobusinessDetails(){
+    this.router.navigate(['/business-details'])
+  }
 }

@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <ion-button (click)="goToitemDetails()">
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <div class="cart-container">
+      <p class="cart">Cart</p>
+      <p class="item-name">Dream Date - Phase 2</p>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item class="delivery-item" lines="none">
+    <ion-thumbnail class="delivery-img">
+      <img src="assets/cartDetails/delivery.png">
+    </ion-thumbnail>
+    <ion-label>
+      <p>Estimated Delivery</p>
+      <p class="time">NOW (15 min)</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+    <div class="cart-div">
+      <p class="quantity">{{quantity}}</p>
+      <ion-icon name="chevron-down-outline" class="down-icon"></ion-icon>
+    </div>
+
+    <ion-label>
+      <ion-thumbnail class="item-card">
+        <img src="assets/restaurantDetails/restaurant-first-card.png">
+      </ion-thumbnail>
+      <p class="cart-item-img">Dream date</p>
+      <p class="price">Rs. 400.00</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-label>
+      <h4 class="subtotal">Subtotal</h4>
+      <p class="subtotal-price">Rs. 400.00</p>
+      <p style="margin-top: 9px;">Delivery</p>
+      <p class="delivery-fee">Rs. 60.00</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item lines ="none">
+    <ion-icon name="ticket-outline" class="voncher-icon"></ion-icon>
+    <p class="voncher-para">Apply a voncher</p>
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+  <ion-item lines="none" >
+    <ion-label>
+      <span class="total-span">Total</span>
+      
+      <span class="inc-span"> (incl. VAT)</span>
+    </ion-label>
+    <p class="total-price">Rs. 460.00</p>
+  </ion-item>
+  <ion-button class="review-payment-btn">
+    Review payment and address
+  </ion-button>
+</ion-footer>
