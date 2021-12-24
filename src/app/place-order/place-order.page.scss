@@ -1,0 +1,61 @@
+
+.arrow-icon,.location-icon,.pencil-icon, .add-icon, .instructions,.wallet-icon,.cash-icon, .reader-icon{
+    color: #C60D5C;
+}
+.checkout{
+    margin: 0px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.item-name{
+    margin: 0px;
+    font-size: 12px;
+}
+.location-icon{
+    margin-left: -11px;
+}
+.pencil-icon{
+    margin-right: -9px;
+}
+.contactless-delivery{
+    white-space: initial; 
+    font-size: 12px; 
+    font-weight: bold;
+}
+.wallet-icon{
+    margin-left: -8px;
+}
+.cash-item{
+    margin-top: -15px;
+}
+.cash-label{
+    font-size: 14px;
+    padding-left: 7px;
+    font-weight: bold;
+}
+.price-para{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.total-span, .total-price{
+    font-size: 12px;
+    font-weight: bold;
+}
+.reader-icon{
+    margin-left: -4px;
+}
+.inc-span{
+    font-size: 12px;
+}
+.below-summary-item{
+    margin-top:-13px;
+    font-size:14px;
+}
+.place-order-btn{
+    --background: #C60D5C;
+    text-transform: initial;
+    width: 96%;
+    padding-left: 8px;
+}

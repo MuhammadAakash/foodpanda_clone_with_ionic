@@ -16,4 +16,7 @@ export class CartDetailsPage implements OnInit {
   goToitemDetails(){
     this.router.navigate(['/item-details'])
   }
+  goToPlaceOrder(){
+    this.router.navigate(['/place-order'])
+  }
 }

@@ -1,0 +1,138 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <ion-button (click)="goToCartDetails()">
+        <ion-icon name="arrow-back-outline" class="arrow-icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <div class="cart-container">
+      <p class="checkout">Checkout</p>
+      <p class="item-name">Greeno Juice Bar - Phase 2</p>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+
+    <ion-item lines="none">
+      <ion-buttons>
+        <ion-button slot="start">
+          <ion-icon name="location-outline" class="location-icon"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-label style="font-weight: bold;">
+        Delivery address
+      </ion-label>
+      <ion-buttons>
+        <ion-button slot="end">
+          <ion-icon name="pencil" class="pencil-icon"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+
+    <ion-item lines="none">
+      <img src="assets/placeOrder/maps.png">
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        <p style="font-weight: bold;">DHA Phase 1</p>
+        <p>Lahore</p>
+      </ion-label>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="add-outline" class="add-icon"></ion-icon>
+      <ion-label>
+        <span class="instructions">Add more instructions</span>
+        
+      </ion-label>
+
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-label class="contactless-delivery">
+        <span >Contactless delivery: switch to online payment for this option</span>
+      </ion-label>
+      <ion-toggle aria-checked="false"></ion-toggle>
+    </ion-item>
+
+    
+  </ion-card>
+
+  <ion-card>
+    <ion-item lines="none">
+      <ion-buttons>
+        <ion-button slot="start">
+          <ion-icon name="wallet-outline" class="wallet-icon"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-label style="font-weight: bold;">
+        Payment method
+      </ion-label>
+      <ion-buttons>
+        <ion-button slot="end">
+          <ion-icon name="pencil" class="pencil-icon"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+    <ion-item lines="none" class="cash-item">
+      <ion-icon name="cash-outline" class="cash-icon"></ion-icon>
+      <ion-label class="cash-label">
+        Cash
+      </ion-label>
+      <p class="price-para">Rs. 460.00</p>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-item lines="none">
+      <ion-icon name="reader-outline" class="reader-icon"></ion-icon>
+      <ion-label style="font-weight: bold; padding-left: 7px;">
+        Order summary
+      </ion-label>
+
+    </ion-item>
+
+    <ion-item class="below-summary-item">
+      <ion-label>
+        1x Dream Date
+      </ion-label>
+      <p>Rs. 400.00</p>
+    </ion-item>
+
+    <ion-item style="margin-top:-13px; font-size:12px;">
+      <ion-label>
+        Subtotal
+      </ion-label>
+      <p>Rs. 400.00</p>
+    </ion-item>
+
+    <ion-item lines="none" style="margin-top:-20px; font-size:12px;">
+      <ion-label>
+        Delivery fee
+      </ion-label>
+      <p>Rs. 60.00</p>
+    </ion-item>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-item lines="none" >
+    <ion-label>
+      <span class="total-span">Total</span>
+      
+      <span class="inc-span"> (incl. VAT)</span>
+    </ion-label>
+    <p class="total-price">Rs. 460.00</p>
+  </ion-item>
+  <ion-button class="place-order-btn" >
+    Place order
+  </ion-button>
+</ion-footer>
