@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-item-details',
@@ -8,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ItemDetailsPage implements OnInit {
   quantity = 1
-  constructor(private router:Router) { }
+  constructor(private router:Router, private navCtrl:NavController) { }
   
   ngOnInit() {
   }
@@ -16,7 +18,7 @@ export class ItemDetailsPage implements OnInit {
   cartDetails(){
     this.router.navigate(['/cart-details'])
   }
-  goTobusinessDetails(){
-    this.router.navigate(['/business-details'])
+  goback(){
+    this.navCtrl.pop()
   }
 }

@@ -1,0 +1,88 @@
+.back-icon, .fav-icon, .cart-icon, .filter-icon{
+    color: #C60D5C;
+  }
+  
+.location{
+    font-size: 14px;
+    font-weight: bold;
+    margin:0px
+}
+.city{
+    font-size:12px;
+    margin: 0px;
+}
+
+ion-searchbar{
+    --placeholder-font-size: 10px;
+}
+.sc-ion-searchbar-md-h{
+    --background: #edf2f5;
+    --border-radius: 20px;
+    width: 102%;
+    margin-left: -4px;
+}
+.filter-btn{
+    margin: 0px;
+}
+
+.daily-deals{
+    padding-left: 5px;
+  }
+  .deals-cards{
+    margin: 0px;
+    padding: 4px;
+    width: 1200px;
+    box-shadow: none;
+    img{
+      width: 1200px;
+      border-radius: 5px;
+    }
+}
+
+.restaurant-heading{
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 7px;
+}
+
+.restaurant-first-card{
+    color:  black;
+    width: 254px;
+    box-shadow: none;
+  }
+  .restaurant-card-heading{
+    font-weight: bold;
+    font-size: 14px;
+    margin:0px
+  }
+
+  .deal-badge{
+    background-color: #C60D5C;
+    position: absolute;
+    top: 15px;
+  }
+  .time-badge{
+    position: absolute;
+    left: 4px;
+    font-size: 12px;
+    padding: 2px;
+    bottom: 60px;
+    color: black;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+
+.restaurant-card-para{
+    margin: 0px;
+    font-size: 11px;
+    color: #6c6767;
+    padding-bottom: 2px;
+  }
+  .restaurant-card-delivery{
+    font-weight: bold;
+    font-size: 11px;
+    margin: 0px;
+  }
+  ion-slide{
+      text-align: left;
+  }

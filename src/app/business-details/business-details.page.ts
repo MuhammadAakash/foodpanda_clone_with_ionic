@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
+
 @Component({
   selector: 'app-business-details',
   templateUrl: './business-details.page.html',
@@ -7,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class BusinessDetailsPage implements OnInit {
 
-  constructor(private  router: Router) { }
+  constructor(private  router: Router, private navCtrl:NavController) { }
 
   segmentvalue = "Popular"
   ngOnInit() {
@@ -21,7 +23,7 @@ export class BusinessDetailsPage implements OnInit {
   itemDetails(){
     this.router.navigate(['/item-details'])
   }
-  goToHome(){
-    this.router.navigate(['/'])
+  goback(){
+    this.navCtrl.pop()
   }
 }

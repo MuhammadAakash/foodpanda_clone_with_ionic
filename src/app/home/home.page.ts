@@ -15,4 +15,7 @@ export class HomePage {
   businessDetails(){
     this.router.navigate(['/business-details'])
   }
+  goToFoodDelivery(){
+    this.router.navigate(['/food-delivery'])
+  }
 }

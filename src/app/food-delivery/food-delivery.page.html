@@ -1,0 +1,116 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <ion-button shape="round" size="small" class="back-btn" (click)="goback()">
+        <ion-icon name="arrow-back-outline" class="back-icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <div class="location-class">
+      <p class="location">DHA Phase 1</p>
+      <p class="city">Lahore</p>
+    </div>
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="heart-outline" class="fav-icon"></ion-icon>
+        
+      </ion-button>
+      <ion-button>
+        <ion-icon name="bag-outline" class="cart-icon"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item lines="none">
+    <ion-searchbar placeholder="Search for restaurants, cusines, dishes..." class="search-class"></ion-searchbar>
+    <ion-buttons slot="end" class="filter-btn">
+    <ion-button> 
+      <ion-icon name="filter-outline" class="filter-icon"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+  </ion-item>
+
+  <h3 class="restaurant-heading">Your daily deals</h3>
+  <div class="daily-deals">
+    <ion-slides [options]="slideOpts">
+    <ion-slide class="deals-cards">
+      <img src="assets/deal1.png">
+    </ion-slide>
+    <ion-slide class="deals-cards">
+      <img src="assets/deal2.png">
+    </ion-slide>
+    <ion-slide class="deals-cards">
+      <img src="assets/deal3.png">
+    </ion-slide>
+  </ion-slides>
+  </div>
+  
+  <h3 class="restaurant-heading">Your Restaurants</h3>
+
+  <div class="your-restaurants">
+    <ion-card class="restaurant-first-card" (click)= "businessDetails()">
+      <ion-badge class="deal-badge">Celebration Deals</ion-badge>
+      <img src="assets/restaurant-first-card.png" style="background-color: #f2f2f2;">
+      <ion-badge  class="time-badge">35 mints</ion-badge>
+      <h3 class="restaurant-card-heading">Pizza Max - Islampura</h3>
+      <p class="restaurant-card-para">Italians, Beverages, European, Desser...</p>
+      <p class="restaurant-card-delivery">PKR 60.00 delivery fee</p>
+      
+
+    </ion-card>
+  </div>
+  <h3 class="restaurant-heading">Panda Exclusives</h3>
+  <div>
+  <ion-slides [options]="slideOpts1">
+    <ion-slide (click)= "businessDetails()">
+      <ion-card class="restaurant-first-card">
+      <ion-badge class="deal-badge">Celebration Deals</ion-badge>
+      <img src="assets/restaurant-first-card.png" style="background-color: #f2f2f2;">
+      <ion-badge  class="time-badge">35 mints</ion-badge>
+      <h3 class="restaurant-card-heading">Pizza Max - Islampura</h3>
+      <p class="restaurant-card-para">Italians, Beverages, European, Desser...</p>
+      <p class="restaurant-card-delivery">PKR 60.00 delivery fee</p>
+    </ion-card>
+    </ion-slide>
+
+    <ion-slide (click)= "businessDetails()">
+      <ion-card class="restaurant-first-card">
+      <ion-badge class="deal-badge">Celebration Deals</ion-badge>
+      <img src="assets/restaurant-first-card.png" style="background-color: #f2f2f2;">
+      <ion-badge  class="time-badge">35 mints</ion-badge>
+      <h3 class="restaurant-card-heading">Pizza Max - Islampura</h3>
+      <p class="restaurant-card-para">Italians, Beverages, European, Desser...</p>
+      <p class="restaurant-card-delivery">PKR 60.00 delivery fee</p>
+    </ion-card>
+    </ion-slide>
+
+    <ion-slide (click)= "businessDetails()">
+      <ion-card class="restaurant-first-card">
+      <ion-badge class="deal-badge">Celebration Deals</ion-badge>
+      <img src="assets/restaurant-first-card.png" style="background-color: #f2f2f2;">
+      <ion-badge  class="time-badge">35 mints</ion-badge>
+      <h3 class="restaurant-card-heading">Pizza Max - Islampura</h3>
+      <p class="restaurant-card-para">Italians, Beverages, European, Desser...</p>
+      <p class="restaurant-card-delivery">PKR 60.00 delivery fee</p>
+    </ion-card>
+    </ion-slide>
+
+    <ion-slide (click)= "businessDetails()">
+      <ion-card class="restaurant-first-card">
+      <ion-badge class="deal-badge">Celebration Deals</ion-badge>
+      <img src="assets/restaurant-first-card.png" style="background-color: #f2f2f2;">
+      <ion-badge  class="time-badge">35 mints</ion-badge>
+      <h3 class="restaurant-card-heading">Pizza Max - Islampura</h3>
+      <p class="restaurant-card-para">Italians, Beverages, European, Desser...</p>
+      <p class="restaurant-card-delivery">PKR 60.00 delivery fee</p>
+    </ion-card>
+    </ion-slide>
+    
+  </ion-slides>
+</div>
+</ion-content>
