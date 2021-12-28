@@ -1,3 +1,58 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId='main'>
+    <ion-header>
+      <div class="user-data">
+      <p class="class-M">M</p>
+      <p class="name">Mohammad Aakash</p>
+    </div>
+    
+    </ion-header>
+    <ion-content>
+      
+        <ion-item class="panda-item">
+          
+        <ion-label>
+          <p>
+            <span class="panda">panda</span>
+            <span class="pay">pay</span>
+          </p>
+          <p class="credit">Credit and payment methods
+          </p>
+          </ion-label>
+          
+        </ion-item>
+        <ion-list>
+          <ion-item lines="none">
+            <ion-icon name="heart-outline" class="fav-icon" slot="start"></ion-icon>
+            <ion-label class="label-class">Favourites</ion-label>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-icon name="reader-outline" class="reader-icon" slot="start"></ion-icon>
+            <ion-label class="label-class">Orders</ion-label>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-icon name="person-outline" class="person-icon" slot="start"></ion-icon>
+            <ion-label class="label-class">Profile</ion-label>
+          </ion-item>
+          <ion-item  >
+            <ion-icon name="location-outline" class="location-icon" slot="start"></ion-icon>
+            <ion-label class="label-class">Addresses</ion-label>
+          </ion-item>
+         
+        </ion-list>
+      
+        <ion-list>
+          <ion-item  lines="none">
+            <ion-label class="label-class">Settings</ion-label>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label class="label-class">terms & condition /privacy</ion-label>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-label class="label-class">Log out</ion-label>
+          </ion-item>
+        </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id='main'></ion-router-outlet>
 </ion-app>
