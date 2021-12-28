@@ -52,6 +52,16 @@
             <ion-label class="label-class">Log out</ion-label>
           </ion-item>
         </ion-list>
+
+        <ion-button (click) = "takePicture()">
+          Click me to take Picture
+        </ion-button>
+        
+
+        <img src="{{theActualPicture}}" >
+        <ion-button (click) = "deleteimage()">
+          Delete your image
+        </ion-button>
     </ion-content>
   </ion-menu>
   <ion-router-outlet id='main'></ion-router-outlet>
