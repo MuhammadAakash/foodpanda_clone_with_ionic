@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Camera, CameraResultType } from '@capacitor/camera';
+import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,8 @@ export class AppComponent {
   imageProperties = {
     quality:100,
     allowEditing: false,
-    resultType: CameraResultType.DataUrl
+    resultType: CameraResultType.DataUrl,
+    source: CameraSource.Camera,
   }
   theActualPicture = ""
   constructor() {}
@@ -20,6 +21,7 @@ export class AppComponent {
     const image = await Camera.getPhoto(this.imageProperties)
 
     this.theActualPicture = image.dataUrl
+    console.log(this.theActualPicture)
 
   }
   deleteimage(){

@@ -58,10 +58,16 @@
         </ion-button>
         
 
-        <img src="{{theActualPicture}}" >
-        <ion-button (click) = "deleteimage()">
-          Delete your image
-        </ion-button>
+        
+
+        <div *ngIf = "theActualPicture !== ''">
+          <img src="{{theActualPicture}}" >
+          <ion-button (click) = "deleteimage()">
+            Delete your image
+          </ion-button>
+        </div>
+        
+       
     </ion-content>
   </ion-menu>
   <ion-router-outlet id='main'></ion-router-outlet>
